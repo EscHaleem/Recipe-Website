@@ -19,12 +19,19 @@
     justify-content: center;
     align-items: center;
     color: #f1c814;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     z-index: 9999;
     opacity: 1;
     font-style: italic;
     transition: opacity 1s ease-out;
+}
+#splash-screen h2{
+    border: 5px solid #f1c814;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid #000;
+    border-radius: 55px 0px 55px 0px;
+    padding: 5px 40px;
 }
 /* Main content styles */
 header, main {
@@ -48,11 +55,19 @@ header {
 
 h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: -15px;
     color: #fff;
     font-style: oblique;
-    text-decoration-line: underline;
+    border: 5px solid #fff;
+    border-bottom: 5px solid #000;
+    border-left: 5px solid #000;
+    border-radius: 55px 0px 55px 0px;
+    max-width: 230px;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    padding: 5px 50px;
 }
 
 main {
@@ -65,7 +80,7 @@ main {
 #recipe-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
     width: 100%;
     max-width: 1200px;
     margin-bottom: 1rem;
@@ -73,13 +88,13 @@ main {
 .recipe-card {
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     text-align: center;
     overflow: hidden;
     transition: transform 0.2s ease;
     padding: 1rem;
     max-width: 310px; 
-    justify-content: space-evenly;
+    justify-self: center;
 }
 
 .recipe-card img {
@@ -138,14 +153,15 @@ button:hover {
     color: #000;
 }
 
-@media (min-width: 768px) {
-    #recipe-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
+#get-new-recipes-btn{
+    margin-top: 30px;
 }
-
-@media (min-width: 1024px) {
-    #recipe-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
+#fetch{
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    
+    align-self: center;
 }

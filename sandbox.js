@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch 30 random recipes
     async function fetchRandomRecipes(count = 30) {
-        recipeContainer.innerHTML = '<p>Fetching recipes...</p>';
+        recipeContainer.innerHTML = '<p id=fetch>Fetching recipes. Please wait...</p>';
         try {
             const recipePromises = Array.from({ length: count }, () =>
                 fetch('https://www.themealdb.com/api/json/v1/1/random.php').then(res => res.json())
@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Fetch 30 random recipes when the page is loaded
     fetchRandomRecipes();
 
     // Add event listener to the "Get New Recipes" button
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Hide the splash screen and show the main content after 2 seconds
+    // splash screen and main content
     setTimeout(() => {
         splashScreen.style.opacity = '0'; // Fade out splash screen
         setTimeout(() => {
