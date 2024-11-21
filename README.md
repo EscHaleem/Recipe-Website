@@ -108,7 +108,7 @@ After going through all the 30 recipes fetched, the user can click the "fetch mo
 
 ## Screenshots
 
-![Screenshot 1](
+![Screenshot 1](assets/screenshot1.png)
 
 ![Screenshot 2](assets/Screenshot%202024-11-21%20223106.png)
 
