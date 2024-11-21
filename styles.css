@@ -165,3 +165,8 @@ button:hover {
     
     align-self: center;
 }
+@media (min-width: 650px) {
+    #recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
