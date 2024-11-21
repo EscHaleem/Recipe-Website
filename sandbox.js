@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch 30 random recipes
     async function fetchRandomRecipes(count = 30) {
-        recipeContainer.innerHTML = '<p id=fetch>Fetching recipes. Please wait...</p>';
+        recipeContainer.innerHTML = '<p id="fetch">Fetching recipes. Please wait...</p>';
         try {
             const recipePromises = Array.from({ length: count }, () =>
                 fetch('https://www.themealdb.com/api/json/v1/1/random.php').then(res => res.json())
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             displayRecipes(recipes);
         } catch (error) {
             console.error('Error fetching recipes:', error);
-            recipeContainer.innerHTML = '<p>Failed to fetch recipes. Please try again later.</p>';
+            recipeContainer.innerHTML = '<p id="fetch">Failed to fetch recipes. Please try again later.</p>';
         }
     }
 

@@ -155,15 +155,19 @@ button:hover {
 
 #get-new-recipes-btn{
     margin-top: 30px;
+    position: relative;
+    bottom: 0;
 }
 #fetch{
-    color: #fff;
-    font-size: 1.5rem;
     text-align: center;
-    height: 100vh;
+    font-style: italic;
+    color: #fff;
+    font-size: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
     width: 100vw;
-    
-    align-self: center;
+    height: 100vh;
 }
 @media (min-width: 650px) {
     #recipe-container {
