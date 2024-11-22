@@ -32,7 +32,7 @@ The recipe website, named Meal Finder, is a responsive website created with the 
 ## Live Demo
 
 Check out the live demo of the project: [Live Demo Link](https://meal-finder-a4d8.onrender.com)
-and the code explanation video: ()
+and the code explanation video: (https://www.loom.com/share/eac57547af014d25858a00d49b900ece?sid=ae7245cc-1456-4792-bad5-623ca9658b22)
  
 ## Features
 
