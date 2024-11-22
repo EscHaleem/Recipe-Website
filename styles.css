@@ -155,13 +155,36 @@ button:hover {
 
 #get-new-recipes-btn{
     margin-top: 30px;
+    position: relative;
+    bottom: 0;
 }
 #fetch{
-    color: #fff;
-    font-size: 1.5rem;
     text-align: center;
-    height: 100vh;
+    font-style: italic;
+    color: #fff;
+    font-size: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
     width: 100vw;
-    
-    align-self: center;
+    height: 100vh;
+}
+@media (min-width: 650px) {
+    #recipe-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1200px) {
+    #recipe-container {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-self: center;
+        align-self: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        border-left: 0px;
+    }
+    .recipe-card{
+        width: 330px;
+    }
 }
